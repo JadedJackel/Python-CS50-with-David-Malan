@@ -228,6 +228,7 @@ print(name)
 
 *** OR *** Version 2
 
+
     # Input:>     darren     james     gibson     <
     # Output:>hello, Darren     James     Gibson, welcome<
     #               |        ^--!here--^        |
@@ -271,25 +272,80 @@ print(f"Hello, {first} {last}")         # Notice, we do not need a comma between
 
 
 
-14
+14 int - Integers
 
-    #
-    # Input 
-    # Output 
-
+    # Here we will look at the various ways to use integers
+    # Output:3
 
 
+x = 1
 
+y = 2 
 
-15
+total = x + y
 
-    #
-    # Input 
-    # Output 
+print(total)
 
 
 
 
+15 int()            - 1h 10m
+                     
+    # Which is called by using >int()< and commonly used with the input() function like this: >int(input())<
+    # When we use more that one function in a statement it is know as 'nesting' functions
+    # Input>2
+    # Output>3
+
+
+x = input("What is the first number:")
+
+y = input("What is the second number:")
+
+total = int(x) + int(y)
+
+print(total)
+
+
+    NOTES - Trying to use >int(total)< here doesnt work, total isn't defined
+    NOTES - And trying to use: Also doesnt work
+        total = x + y
+        int(total)
+    NOTES - And neither does something like >int(print(total))< Which, is just icrazy to think that it would
+
+
+    *** OR *** Version 2    Best!!
+
+
+x = int(input("What is the first number:"))
+
+y = int(input("What is the second number:"))
+
+total = x + y
+
+print(total)
+
+
+    NOTES - Trying to declare the variable 'total', inside of 'print', like this >print(total = x + y)< doesn't work
+    NOTES - But just using >print( x + y )< works just fine
+    
+*** OR *** Version 3    - Not Recommended, but possible
+
+print(int(input("Whats x:")) + int(input("Whats y:")))
+
+
+16 float            - 1h 20m
+   float            - float is a data type, and is commonly called with the input function like this >float(input("Exampel"))<
+
+    # 
+    # Input>
+    # Output>
+
+
+
+
+    # 
+    # Input>
+    # Output>
 
 
 
@@ -310,21 +366,10 @@ print(f"Hello, {first} {last}")         # Notice, we do not need a comma between
 
 
 
-
-
-
-
-
-
-
-
 #---->    Practice Arena    <----#
 
 # Exceptions Practice & Questionable Stuff 
 """
-
-
-
 
 
 
